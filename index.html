@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="total">
+            <input type="text" id="form">
+        </div>
+        <div class="buttons">
+            <button class="item item-grey" id="clear" onclick="clear()">C</button>
+            <button class="item item-grey" id="back" onclick="back()"> <i class="fa-sharp fa-solid fa-delete-left"
+                    style="font-size: 42px;"></i> </button>
+            <button class="item item-grey" id="mod" onclick="display('%')">%</button>
+            <button class="item item-orange" id="divide" onclick="display('/')">/</button>
+            <button class="item item-darkgrey" id="seven" onclick="display('7')">7</button>
+            <button class="item item-darkgrey" id="eight" onclick="display('8')">8</button>
+            <button class="item item-darkgrey" id="nine" onclick="display('9')">9</button>
+            <button class="item item-orange" id="multi" onclick="display('*')">x</button>
+            <button class="item item-darkgrey" id="four" onclick="display('4')">4</button>
+            <button class="item item-darkgrey" id="five" onclick="display('5')">5</button>
+            <button class="item item-darkgrey" id="six" onclick="display('6')">6</button>
+            <button class="item item-orange" id="minus" onclick="display('-')">-</button>
+            <button class="item item-darkgrey" id="one" onclick="display('1')">1</button>
+            <button class="item item-darkgrey" id="two" onclick="display('2')">2</button>
+            <button class="item item-darkgrey" id="three" onclick="display('3')">3</button>
+            <button class="item item-orange" id="plus" onclick="display('+')">+</button>
+            <button class="item item-darkgrey" id="zero" onclick="display('0')">0</button>
+            <button class="item item-darkgrey" id="point" onclick="display('.')">.</button>
+            <button class="item item-orange" id="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+</body>
+<script src="action.js"></script>
+
+</html>
